@@ -1,0 +1,576 @@
+
+@media (min-width: 768px) {
+* {
+    box-sizing: border-box;
+}
+body {
+    width: 100%;
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    font-family: "GFS Didot", "Montserrat";
+    scroll-behavior: smooth;
+    overflow-x: hidden;
+    background-color: #faf5e8;
+}
+.cabecalho {
+    width: 100%;
+    height: 60px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 1%;
+    position: fixed;
+    top: 0;
+    z-index: 1000;
+    background-color: #faf5e8;
+    
+}
+
+.logo {
+    color: #4B2E1E;
+    text-decoration: none;
+    font-family: "GFS Didot", serif;
+    font-size: 22px;
+    letter-spacing: 1px;
+    white-space: nowrap;
+    margin: 0 50px 0 50px;
+}
+.menu {
+    display: flex;
+    gap: 45px;
+    white-space: nowrap;
+}
+.menu a {
+    color: #4B2E1E;
+    text-decoration: none;
+    font-family: "GFS Didot", serif;
+    font-size: 16px;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+#section1 {
+    width: 100%;
+    height: 90vh;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    box-sizing: border-box;
+}
+.container {
+    width: 100%;
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.fotoPrincipal {
+    display: block;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+.faixa {
+    margin-top: -10px;
+    width: 100%;
+    overflow: hidden;
+    background-color: #faf5e8;
+    border-top: 1px solid #222;
+    border-bottom: 1px solid #222;
+    padding: 25px 0;
+}
+
+.faixa-texto {
+    display: flex;
+    width: max-content;
+    align-items: center;
+    gap: 45px;
+    animation: passar 25s linear infinite;
+}
+
+.faixa-texto span {
+    font-family: "GFS Didot";
+    font-size: 35px;
+    font-weight: 500;
+    letter-spacing: 3px;
+    white-space: nowrap;
+    color: #4B2E1E;
+}
+
+@keyframes passar {
+
+    from {
+        transform: translateX(0);
+    }
+
+    to {
+        transform: translateX(-50%);
+    }
+
+}
+#section2 {
+    max-width: 1440px;
+    width: 100%;
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    overflow: hidden;
+    background-color: #faf5e8;
+}
+.fotos-quem {
+    width: 60%;
+    height: 100vh;
+    position: relative;
+    overflow: hidden;
+}
+
+.slides-quem {
+    width: 100%;
+    height: 100%;
+    position: relative;
+    margin: 30px 20px 0 70px;
+}
+
+.foto-quem {
+    position: absolute;
+    inset: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    opacity: 0;
+    transition: opacity 1s ease;
+}
+
+.foto-quem.ativa {
+    opacity: 1;
+}
+.bolinhas {
+    position: absolute;
+    bottom: 30px;
+    left: 50%;
+    transform: translateX(-50%);
+    display: flex;
+    gap: 9px;
+    z-index: 5;
+}
+
+.bolinha  {
+    width: 8px;
+    height: 8px;
+    border-radius: 50%;
+    background-color: white;
+    opacity: 0.5;
+    cursor: pointer;
+    transition: 0.3s ease;
+}
+
+.bolinha.ativa {
+    opacity: 1;
+    transform: scale(1.3);
+}
+
+
+
+#container2 {
+    padding: 80px;
+    box-sizing: border-box;
+
+}
+
+.quem {
+    font-size: 3rem;
+    color: #4B2E1E;
+    margin-top: 20px;
+    margin-bottom: -55x;
+    margin-left: 15%;
+    font-family: "GFS Didot";
+   
+}
+
+.soueu {
+    font-size: 3rem;
+    color: #4B2E1E;
+    margin-top: -70px;
+    margin-bottom: 20px;
+    margin-left: 30%;
+    font-family: "GFS Didot";
+    font-style: italic;
+}
+
+#quemSou {
+    max-width: 650px;
+    font-size: 15px;
+    line-height: 1.8;
+    margin: 0;
+    font-family: "GFS Didot";
+    color: #4B2E1E;
+}
+.direcao {
+    width: 100%;
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #c4c4b0;
+    padding: 100px 30px;
+    box-sizing: border-box;
+}
+
+
+.direcao-container {
+    width: 100%;
+    max-width: 850px;
+    text-align: center;
+    color: #4B2E1E;
+}
+
+
+.direcao-titulo {
+    margin: 0 0 30px;
+    font-family: "Montserrat", sans-serif;
+    font-size: 18px;
+    letter-spacing: 4px;
+}
+.direcao h2 {
+    margin: 0 0 45px;
+    font-family: "GFS Didot", serif;
+    font-size: clamp(45px, 6vw, 80px);
+    font-weight: 400;
+    line-height: 0.95;
+}
+
+.direcao-texto {
+    font-family: "Montserrat", sans-serif;
+    font-size: 15px;
+    line-height: 1.8;
+    max-width: 600px;
+    margin: 0 auto;
+    text-align: justify;
+    line-height: 1.7;
+}
+.direcao-texto strong {
+    font-weight: 600;
+}
+.galeria {
+    width: 100%;
+    height: 600px;
+
+    display: flex;
+    gap: 10px;
+
+    padding: 20px;
+    box-sizing: border-box;
+
+    overflow: hidden;
+}
+
+.galeria img {
+    width: 25%;
+    height: 100%;
+
+    object-fit: cover;
+
+    opacity: 0;
+    transform: translateY(40px);
+
+    animation: aparecer 1s ease forwards;
+}
+
+.galeria img:nth-child(1) {
+    animation-delay: 0.2s;
+}
+
+.galeria img:nth-child(2) {
+    animation-delay: 0.4s;
+}
+
+.galeria img:nth-child(3) {
+    animation-delay: 0.6s;
+}
+
+.galeria img:nth-child(4) {
+    animation-delay: 0.8s;
+}
+
+@keyframes aparecer {
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+
+}
+.galeria img {
+    width: 25%;
+    height: 100%;
+
+    object-fit: cover;
+
+    transition: transform 0.6s ease;
+}
+
+.galeria img:hover {
+    transform: scale(1.04);
+}
+#avaliacoesclientes {
+    max-width: 1440px;
+    width: 100%;
+    min-height: 100vh;
+    background-color:  #c4c4b0;
+    padding: 80px 5%;
+    box-sizing: border-box;
+    overflow: hidden;
+}
+
+.feedback {
+    font-size: 3rem;
+    color: #faf5e8;
+    margin-top: 20px;
+    margin-bottom: -55x;
+    margin-left: 15%;
+    font-family: "GFS Didot";
+}
+
+.feedback2 {
+    font-size: 3rem;
+    color: #faf5e8;
+    margin-top: -70px;
+    margin-bottom: 20px;
+    margin-left: 30%;
+    font-family: "GFS Didot";
+    font-style: italic;
+}
+
+#secComents {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    gap: 25px;
+}
+
+.comentario {
+    width: 25%;
+    min-height: 220px;
+    padding: 30px;
+    background-color: #ffffff;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.header {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+
+.fotocoment {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+.username {
+    font-family: "Montserrat", sans-serif;
+    font-size: 13px;
+    font-weight: 500;
+}
+
+.text {
+    font-family: "Montserrat", sans-serif;
+    font-size: 14px;
+    line-height: 1.7;
+    margin: 30px 0 0;
+    color: #333;
+}
+
+#pacotes {
+    max-width: 1440px;
+    width: 100%;
+    min-height: 100vh;
+    padding: 100px 6%;
+    background-color: #faf5e8;
+    overflow: hidden;
+}
+.containerPacotes {
+    position: relative;
+    width: 100%;
+    overflow: hidden;
+}
+.slider2 {
+    width: 100%;
+    overflow: hidden;
+}
+.slide2 {
+    display: flex;
+    transition: transform 0.7s ease;
+}
+#pacote {
+    position: relative;
+    flex: 0 0 90vw;
+    width: 90vw;
+    height: 650px;
+    margin-right: 25px;
+    padding: 60px;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    overflow: hidden;
+}
+
+
+#pacote {
+    background-color: #faf5e8;
+}
+
+#pacote h4 {
+    margin: 0 10px 8px;
+    font-family: "GFS Didot", serif;
+    color: #4B2E1E;
+    font-size: 18px;
+    font-weight: 500;
+    letter-spacing: 4px;
+    text-transform: uppercase;
+    opacity: 0.65;
+}
+#pacote h5 {
+    color: #4B2E1E;
+    margin: 0 0 30px;
+    font-family: "GFS Didot", serif;
+    font-size: clamp(48px, 6vw, 80px);
+    font-weight: 400;
+    line-height: 0.9;
+}
+#pacote p {
+    max-width: 360px;
+    margin: 0 0 25px;
+    font-family: "Montserrat", sans-serif;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 1.9;
+    color: #4B2E1E;
+
+}
+
+#pacote b {
+    margin-top: 5px;
+    font-family: "GFS Didot", serif;
+    font-size: 32px;
+    font-weight: 400;
+    color: #4B2E1E;
+
+}
+#pacote b + p {
+    margin-top: 8px;
+    font-size: 10px;
+    letter-spacing: 1px;
+    opacity: 0.55;
+}
+#pacote img {
+    position: absolute;
+    width: 36%;
+    height: 78%;
+    top: 50%;
+    right: 6%;
+    object-fit: cover;
+    transform: translateY(-50%);
+    transition: transform 0.7s ease;
+}
+
+#pacote:hover img {
+    transform: translateY(-50%) scale(1.025);
+}
+.contato {
+    width: 100%;
+    min-height: 100vh;
+    padding: 120px 8%;
+    background-color: #faf5e8;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    box-sizing: border-box;
+}
+.contato h2 {
+    margin: 0;
+    color: #4B2E1E;
+    font-family: "GFS Didot", serif;
+    font-size: clamp(38px, 5vw, 70px);
+    font-weight: 400;
+    text-align: center;
+    line-height: 1;
+}
+.contato .subtitulo {
+    margin-top: 15px;
+    margin-bottom: 60px;
+    font-size: clamp(25px, 3vw, 40px);
+    font-style: italic;
+}
+#formulario {
+    width: 100%;
+    max-width: 650px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+.nomeInput,
+.emailInput,
+.mensagemInput {
+    width: 100%;
+}
+#formulario input {
+    width: 100%;
+    padding: 18px 5px;
+    border: none;
+    border-bottom: 1px solid #4B2E1E;
+    outline: none;
+    background-color: transparent;
+    color: #4B2E1E;
+    font-family: "Montserrat", sans-serif;
+    font-size: 14px;
+    box-sizing: border-box;
+}
+#formulario input::placeholder {
+    color: #4B2E1E;
+    opacity: 0.6;
+}
+#mensagem {
+    min-height: 120px;
+    resize: vertical;
+}
+#formulario button {
+    align-self: center;
+    margin-top: 25px;
+    padding: 15px 50px;
+    border: 1px solid #4B2E1E;
+    background-color: #4B2E1E;
+    color: #faf5e8;
+    font-family: "Montserrat", sans-serif;
+    font-size: 12px;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    cursor: pointer;
+    transition: 0.3s ease;
+}
+#formulario button:hover {
+    background-color: transparent;
+    color: #4B2E1E;
+}
+footer {
+    width: 100%;
+    padding: 25px;
+    background-color: #4B2E1E;
+    color: #faf5e8;
+    text-align: center;
+    box-sizing: border-box;
+}
+footer p {
+    margin: 0;
+    font-family: "Montserrat", sans-serif;
+    font-size: 11px;
+    letter-spacing: 1px;
+}
+}
