@@ -23,6 +23,9 @@ O site foi desenvolvido para apresentar informações sobre a fotógrafa, seus s
 ## Acesse o projeto
 
 - **Repositório:** https://github.com/tawanegrigorio/Site-Fotografia
+## Prévia do projeto
+
+![Prévia do projeto ](fotografia.png)
 
 ## Aprendizados
 
